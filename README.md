@@ -3,22 +3,10 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+## Welcome to Bookish 
+    This app allows indie authors to submit their works for purchase. 
 
-* Ruby version
+    Includes a map (built with the Google API) to locate local stores with the books in stock.
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Demo Video 
