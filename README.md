@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bookish is built with React and Ruby on Rails.
 
 ## Welcome to Bookish 
     This app allows indie authors to submit their works for purchase. 
