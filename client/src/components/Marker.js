@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 
-export default function Marker({ position }: { position: google.maps.LatLngLiteral }) {
- 
+export default function Marker({ position, map }: { position: google.maps.LatLngLiteral }) {
+    console.log({position})
 
     useEffect(() => {
-      new google.maps.Marker({position});
+      const marker = new google.maps.Marker({position});
     });
    
   return null;

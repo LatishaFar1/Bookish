@@ -1,7 +1,7 @@
 
 import React, {useEffect, useRef} from "react";
 
-export default function Map() {
+export default function Map({children}) {
     const ref = useRef();
 
     useEffect(() => {
@@ -12,7 +12,7 @@ export default function Map() {
     });
    
   return <div ref={ref} id="map">
-      <h1>Map</h1>
+     {children}
     
 
 
