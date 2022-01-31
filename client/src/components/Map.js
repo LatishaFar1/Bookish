@@ -7,7 +7,7 @@ export default function Map() {
     useEffect(() => {
       new window.google.maps.Map(ref.current, {
         center: {lat: 40.713050, lng: -74.007230 },
-        zoom: 10,
+        zoom: 12,
       });
     });
    
