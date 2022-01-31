@@ -1,11 +1,16 @@
-import Map from "./components/Map"
+import Map from './components/Map';
+import { Wrapper } from "@googlemaps/react-wrapper";
 import './App.css';
 
 function App() {
+
   return (
-    <div className="App">
-     <Map />
-    </div>
+    <Wrapper apiKey={""}>
+      <Map />
+
+    </Wrapper>
+    
+   
   );
 }
 
