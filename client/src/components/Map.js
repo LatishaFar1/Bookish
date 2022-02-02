@@ -15,7 +15,11 @@ export default function Map() {
     new google.maps.Marker({
       position: {lat: 40.712511, lng: -74.007905},
       map,
-      title: "Hello World!",
+      title:"library",
+      icon: {
+        url: "https://icons8.com/icon/88049/castle",
+        scaledSize: new google.maps.Size(38, 31)
+      }
     });
 
   return <div className="map">
