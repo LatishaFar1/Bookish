@@ -1,6 +1,6 @@
 
 import React from "react";
-
+import { RiBookOpenLine } from "react-icons/ri";
 
 export default function Map() {
   const google = window.google 
@@ -12,12 +12,14 @@ export default function Map() {
     mapId: '2ef2dbafe148d19'
     });
    
+    const marker = <RiBookOpenLine />;
+
     new google.maps.Marker({
       position: {lat: 40.712511, lng: -74.007905},
       map,
       title:"library",
       icon: {
-        url: "https://icons8.com/icon/88049/castle",
+        marker,
         scaledSize: new google.maps.Size(38, 31)
       }
     });
