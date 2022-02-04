@@ -10,8 +10,8 @@ function App() {
   return (
    <div>
      <h1>Welcome to Bookish</h1>
-     <Books/>
-     <Map/>
+     {/* <Books/>
+     <Map/> */}
      <Login/>
    </div>
     
