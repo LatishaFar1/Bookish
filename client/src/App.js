@@ -11,8 +11,8 @@ function App() {
    <div>
      <h1>Welcome to Bookish</h1>
      <Books/>
-     {/* <Map/>
-     <Login/> */}
+     <Map/>
+     <Login/>
    </div>
     
    
