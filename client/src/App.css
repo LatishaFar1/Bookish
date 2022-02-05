@@ -131,9 +131,11 @@ map */
 
 .book-img{
   display: block;
-  max-width: 100%;
-  vertical-align: middle;
-  border: 0;
+  float: right;
+  width:  300px;
+  height: 500px;
+  object-fit: cover;
+ 
 }
 
 .card-content{

@@ -6,7 +6,7 @@ export default function BookCard({book}) {
 
 
   return <div style={{backgroundColor: "#10181a"}}>
-
+    <h1 className='book-header'></h1>
 {/* <section className='books-section'> */}
   <div className='books-container'>
     <div className='books-row'>
@@ -18,7 +18,7 @@ export default function BookCard({book}) {
                 <h2>{book.title}</h2>
                   <h3>by: {book.author}</h3>
                   <h4 className='price'>price</h4>
-                  <h4>{book.stock}</h4>
+                  <h4> Available: {book.stock}</h4>
               </div>
 
           </div>
