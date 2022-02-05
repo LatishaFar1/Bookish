@@ -15,7 +15,8 @@ class BooksController < ApplicationController
         render json: book 
     end 
 
-
+    private 
+    
     def book_params
         params.permit(:title, :author, :stock, :image)
     end 
