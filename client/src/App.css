@@ -91,6 +91,9 @@ map */
 /* Books */
 .books-section{
   padding: 80px;
+  display: block;
+  box-sizing: border-box;
+  flex-direction: row;
 }
 
 .books-container{

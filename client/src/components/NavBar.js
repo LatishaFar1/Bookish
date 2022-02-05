@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 export default function NavBar() {
 
@@ -7,7 +8,7 @@ export default function NavBar() {
       <div className='nav-container'>
         <ul className='nav-links'>
             <li className="nav-link">
-                
+                <Link to="/books">Books</Link>
             </li>
         </ul>
       </div>

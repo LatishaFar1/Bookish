@@ -3,6 +3,7 @@ import './App.css';
 import Books from './components/Books';
 import Login from './components/Login';
 import { useEffect, useState } from 'react';
+import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   
@@ -21,10 +22,16 @@ function App() {
 
   return (
    <div>
-     <h1>Welcome to Bookish</h1>
-     <Books books={books} />
+    <Router>
+      <Routes>
+        <Route path="/books" element={ <Books books={books} /> }/>
+
+     
+    
      {/* <Map/>
      <Login/> */}
+      </Routes>
+    </Router>
    </div>
     
    
