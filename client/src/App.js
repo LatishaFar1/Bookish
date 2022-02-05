@@ -8,7 +8,7 @@ function App() {
   
 
   const [books, setBooks] = useState([]);
-  
+
   useEffect(() => {
     fetch("api/books")
     .then(response => response.json())
@@ -22,9 +22,9 @@ function App() {
   return (
    <div>
      <h1>Welcome to Bookish</h1>
-     {/* <Books/>
-     <Map/> */}
-     <Login/>
+     <Books books={books} />
+     {/* <Map/>
+     <Login/> */}
    </div>
     
    
