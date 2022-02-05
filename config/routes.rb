@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   scope :api do 
-  resources :books, only: [:index, :show, :create]
+  resources :books
   resources :users
 
   post "/login", to: "sessions#create"
