@@ -4,6 +4,7 @@ import Books from './components/Books';
 import Login from './components/Login';
 import { useEffect, useState } from 'react';
 import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from './components/Home';
 
 function App() {
   
@@ -26,7 +27,7 @@ function App() {
       <Routes>
         <Route path="/books" element={ <Books books={books} /> }/>
 
-     
+        <Route path="/" element={<Home />} />
     
      {/* <Map/>
      <Login/> */}
