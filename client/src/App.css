@@ -60,3 +60,59 @@ map */
 
 
 /* Books */
+.books-section{
+  padding: 80px;
+}
+
+.books-container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.books-row{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.book-column{
+  width: 33.33333333%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.book{
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.product{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.book-img{
+  display: block;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+
+.card-content{
+  text-align: center;
+}
+
+.price{
+  margin: 0 0 10px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}

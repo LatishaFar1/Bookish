@@ -25,7 +25,30 @@ export default function Books() {
   </h2>
 </section>
 
+<section className='books-section'>
+  <div className='books-container'>
+    <div className='books-row'>
+      <div className='book-column'>
+        <div className='book'>
+          <div className='product'>
+            <img className='book-img' src="https://images.unsplash.com/photo-1527176930608-09cb256ab504?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2348&q=80" alt="book img" />
+              <div className='card-content'>
+                <h3>book name</h3>
+                  <h4 className='price'>price</h4>
+              </div>
 
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
   
             
    </div>     
