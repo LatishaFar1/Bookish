@@ -9,7 +9,7 @@ import NavBar from "./components/NavBar";
 
 function App() {
   
-
+  const [user, setUser] = useState(null);
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/books" element={ <Books books={books} /> }/>
-
+        <Route path="/login" element={<Login setUser={setUser} />} />
         <Route path="/" element={<Home />} />
 
       </Routes>
