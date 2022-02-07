@@ -11,8 +11,8 @@ export default function Books({books}) {
       books.map(book => 
         <BookCard book={book} key={book.id}/>)
     }
-    <div id="map">
+   
     <Map />
-    </div>
+ 
    </div>     
   };
