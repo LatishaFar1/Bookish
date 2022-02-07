@@ -95,68 +95,83 @@ map */
     font-weight: bold;
     font-family: 'Supermercado One', cursive;
   }
-/* Login  */
+  
+  
+  /* Books */
+  .books-section{
+    padding: 80px;
+    display: block;
+    box-sizing: border-box;
+    flex-direction: row;
+  }
+  
+  .books-container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .books-row{
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .book-column{
+    width: 33.33333333%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+  
+  .book{
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .product{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .book-img{
+    display: block;
+    float: right;
+    width:  300px;
+    height: 500px;
+    object-fit: cover;
+    
+  }
+  
+  .card-content{
+    text-align: center;
+  }
+  
+  .price{
+    margin: 0 0 10px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
 
+  /* Login  */
+  .login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
 
-/* Books */
-.books-section{
-  padding: 80px;
-  display: block;
-  box-sizing: border-box;
-  flex-direction: row;
-}
-
-.books-container{
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.books-row{
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.book-column{
-  width: 33.33333333%;
-  float: left;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  box-sizing: border-box;
-}
-
-.book{
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.product{
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.book-img{
-  display: block;
-  float: right;
-  width:  300px;
-  height: 500px;
-  object-fit: cover;
- 
-}
-
-.card-content{
-  text-align: center;
-}
-
-.price{
-  margin: 0 0 10px;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
+  .login-screen{
+    background: linear-gradient(75deg, #461220, #8C2F39, #B23A48, #FCB9B2);		
+	position: relative;	
+	height: 850px;
+	width: 400px;	
+	box-shadow: 0px 0px 24px #fed0bb;
+  }

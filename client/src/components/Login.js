@@ -33,7 +33,7 @@ export default function Login({setUser}) {
   return <div style={{backgroundColor: "#735823"}}>
 
  <section className="vh-100" style={{backgroundColor: '#1e1f24'}}>
-  <div className="container py-5 h-100">
+  {/* <div className="container py-5 h-100">
     <div className="row d-flex justify-content-center align-items-center h-100">
       <div className="col col-xl-10">
         <div className="card" style={{borderRadius: "1rem"}}>
@@ -47,9 +47,9 @@ export default function Login({setUser}) {
               />
             </div>
             <div style={{textAlign: "center"}}>
-              <div>
+              <div> */}
 
-                <form>
+                {/* <form>
                   <h5 style={{letterSpacing: "1px"}}>Sign in:</h5>
 
                   <div>
@@ -67,15 +67,23 @@ export default function Login({setUser}) {
                   </div>
 
                  
-                </form>
+                </form> */}
+                <div className="login-container">
+                  <div className="login-screen">
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
+                  </div>
+
+
+                </div>
+        
+           
+    
+        
+     
+  
+
 </section>
 
 
