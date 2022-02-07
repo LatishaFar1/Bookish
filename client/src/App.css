@@ -58,6 +58,7 @@ map */
 
 /* NavBar */
   .nav-container{
+    background-color: #FCB9B2;
     position: relative;
     padding-right: 15px;
     padding-left: 15px;
@@ -65,8 +66,8 @@ map */
     margin-left: auto;
     display: block;
   }
-
-
+  
+  
   .nav-links{
     float: none;
     display: inline-block;
@@ -80,10 +81,19 @@ map */
     padding-inline-start: 40px;
     text-align: center;
   }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
 
-  .nav-link{
+  .nav-link a{
+    text-decoration: none;
     position: static;
     float: left;
+    margin: 20px;
+    padding: 15px;
+    color: #8C2F39;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Supermercado One', cursive;
   }
 /* Login  */
 

@@ -8,8 +8,8 @@ export default function NavBar() {
       <div className='nav-container'>
         <ul className='nav-links'>
             <li className="nav-link">
-                <Link to="/books">Books</Link>
-                <Link to="/">Home</Link>
+                <Link to="/">home</Link>
+                <Link to="/books">books</Link>
             </li>
         </ul>
       </div>
