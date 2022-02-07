@@ -1,5 +1,6 @@
 import React from 'react';
 import BookCard from './BookCard';
+import Map from './Map';
 
 export default function Books({books}) {
 
@@ -10,7 +11,8 @@ export default function Books({books}) {
       books.map(book => 
         <BookCard book={book} key={book.id}/>)
     }
-  
-            
+    <div id="map">
+    <Map />
+    </div>
    </div>     
   };

@@ -1,4 +1,4 @@
-import Map from './components/Map';
+
 import './App.css';
 import Books from './components/Books';
 import Login from './components/Login';
@@ -30,9 +30,7 @@ function App() {
         <Route path="/books" element={ <Books books={books} /> }/>
 
         <Route path="/" element={<Home />} />
-    
-     {/* <Map/>
-     <Login/> */}
+
       </Routes>
     </Router>
    </div>
