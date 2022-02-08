@@ -166,12 +166,62 @@ map */
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    font-family: 'Supermercado One', cursive;
   }
 
   .login-screen{
     background: linear-gradient(75deg, #461220, #8C2F39, #B23A48, #FCB9B2);		
 	position: relative;	
-	height: 850px;
-	width: 400px;	
 	box-shadow: 0px 0px 24px #fed0bb;
   }
+
+  .login-form{
+    width: 320px;
+    padding: 30px;
+    padding-top: 156px;
+  }
+
+  .login-info{
+  padding: 20px 0px;	
+	position: relative;	
+  }
+
+  .login-input{
+    border: none;
+    border-bottom: 2px solid #FCB9B2;
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 700;
+    width: 75%;
+    transition: .2s;
+  }
+
+.login-input:active,
+.login-input:focus,
+.login-input:hover {
+	outline: none;
+	border-bottom-color: #461220;
+}
+
+.login-button{
+  font-family: 'Supermercado One', cursive;
+	font-size: 14px;
+	margin-top: 20px;
+	padding: 15px;
+	border-radius: 30px;
+	border: 2px solid #D4D3E8;
+	align-items: center;
+	width: 100%;
+	color: #461220;
+	box-shadow: 0px 5px 5px #FCB9B2;
+	transition: .2s;
+  margin-bottom: 20px;
+}
+
+.login-button:active,
+.login-button:focus,
+.login-button:hover {
+	border-color: #461220;
+	outline: none;
+}

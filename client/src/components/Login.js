@@ -70,9 +70,17 @@ export default function Login({setUser}) {
                 </form> */}
                 <div className="login-container">
                   <div className="login-screen">
-
-
-
+                    <form className="login-form">
+                      <div className="login-info">
+                        <input type="text" className="login-input" name="username"/>
+                        <label>username</label>
+                      </div>
+                      <div className="login-info">
+                        <input type="password" className="login-input"/>
+                        <label>password</label>
+                      </div>
+                      <button className='login-button'> login </button>
+                    </form>
                   </div>
 
 
