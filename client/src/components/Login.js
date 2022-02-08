@@ -30,56 +30,22 @@ export default function Login({setUser}) {
       }
 
 
-  return <div style={{backgroundColor: "#735823"}}>
+  return <div style={{backgroundColor: "#1E1F24"}}>
 
- <section className="vh-100" style={{backgroundColor: '#1e1f24'}}>
-  {/* <div className="container py-5 h-100">
-    <div className="row d-flex justify-content-center align-items-center h-100">
-      <div className="col col-xl-10">
-        <div className="card" style={{borderRadius: "1rem"}}>
-          <div className="row g-0">
-            <div className="col-md-6 col-lg-5 d-none d-md-block">
-              <img
-                src="https://images.unsplash.com/photo-1509822929063-6b6cfc9b42f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
-                alt="login form"
-                className="img-fluid" 
-                style={{height: "50%", width: "50%", marginLeft: "auto", marginRight: "auto", display: "block" }}
-              />
-            </div>
-            <div style={{textAlign: "center"}}>
-              <div> */}
-
-                {/* <form>
-                  <h5 style={{letterSpacing: "1px"}}>Sign in:</h5>
-
-                  <div>
-                    <input type="text"  name="username" />
-                    <label className="form-label" htmlFor="form2Example17">username</label>
-                  </div>
-
-                  <div>
-                    <input type="password"  name="password" />
-                    <label className="form-label" htmlFor="form2Example17">password</label>
-                  </div>
-
-                  <div>
-                    <button type="submit">Login</button>
-                  </div>
-
-                 
-                </form> */}
                 <div className="login-container">
                   <div className="login-screen">
-                    <form className="login-form">
+                    <form className="login-form" onSubmit={handleSubmit}>
                       <div className="login-info">
-                        <input type="text" className="login-input" name="username"/>
+                        <input type="text" className="login-input" 
+                        value={username} onChange={(e) => setUsername(e.target.value)} />
                         <label>username</label>
                       </div>
                       <div className="login-info">
-                        <input type="password" className="login-input"/>
+                        <input type="password" className="login-input"
+                        value={password} onChange={(e) => setPassword(e.target.value)}/>
                         <label>password</label>
                       </div>
-                      <button className='login-button'> login </button>
+                      <button className='login-button' type="submit"> login </button>
                     </form>
                   </div>
 
@@ -87,15 +53,6 @@ export default function Login({setUser}) {
                 </div>
         
            
-    
-        
-     
-  
-
-</section>
-
-
-
 
   </div>;
 }
