@@ -17,7 +17,7 @@ export default function BookCard({book}) {
               <div className='card-content'>
                 <h2>{book.title}</h2>
                   <h3 style={{color: "#8C2F39"}}>by: {book.author}</h3>
-                  <h4 className='price'> $ {book.price}</h4>
+                  <h4 className='price'> $ {book.price}.00</h4>
                   <h4  style={{color: "#8C2F39"}}> {book.stock} in stock </h4>
               </div>
 
