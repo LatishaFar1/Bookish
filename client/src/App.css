@@ -225,3 +225,31 @@ map */
 	border-color: #461220;
 	outline: none;
 }
+
+/* Search  */
+.search-container{
+  font-family: 'Supermercado One', cursive;
+	font-size: 14px;
+	margin-top: 20px;
+	padding: 15px;
+	border-radius: 30px;
+	border: 2px solid #D4D3E8;
+	width: 50%;
+	color: #461220;
+	box-shadow: 0px 5px 5px #FCB9B2;
+	transition: .2s;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  display: block;
+}
+
+.search-text{
+  border: none;
+  background: none;
+  padding: 10px;
+  padding-left: 24px;
+  font-weight: 700;
+  width: 75%;
+  transition: .2s;
+  color: #FCB9B2;
+}

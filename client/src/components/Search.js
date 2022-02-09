@@ -15,12 +15,11 @@ export default function Search({books}) {
     });
 
   return( <div>
-      <div className='search-container' style={{backgroundColor: "#10181a"}}>
+      <div className='search-container' >
         <div>
-            <input type="text" placeholder="search for a book title" value={filter}
+            <input type="text" className="search-text" placeholder="search for a book title" value={filter}
             onChange={bookSearch}
             />
-            <label>search</label>
         </div>
       </div>
 
