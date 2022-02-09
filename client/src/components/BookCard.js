@@ -28,8 +28,6 @@ export default function BookCard({book}) {
       </div>
 
     </div>
-
-
   </div>
 
 {/* </section> */}
