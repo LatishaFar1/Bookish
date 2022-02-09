@@ -253,3 +253,14 @@ map */
   transition: .2s;
   color: #FCB9B2;
 }
+
+/* Home  */
+.home-title{
+  font-family: 'Supermercado One', cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+.subtitle{
+  
+}

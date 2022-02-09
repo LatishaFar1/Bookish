@@ -10,7 +10,7 @@ export default function Books({books}) {
   
 
     <Search books={books} />
-    {/* <Map />
-  */}
+    {/* <Map /> */}
+ 
    </div>     
   };
