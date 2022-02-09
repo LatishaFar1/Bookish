@@ -22,6 +22,16 @@ function App() {
   }, [])
 
 
+  useEffect(() => {
+    fetch("api/me")
+    .then((response) => {
+      if (response.ok ){
+        response.json()
+        .then((user) => setUser(user));
+      }
+    })
+  }, []);
+
 
   return (
    <div>
