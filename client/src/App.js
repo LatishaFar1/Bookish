@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './components/Home';
 import NavBar from "./components/NavBar";
 
+
 function App() {
   
   const [user, setUser] = useState(null);
@@ -25,7 +26,9 @@ function App() {
   return (
    <div>
     <Router>
+
       <NavBar />
+     
       <Routes>
         <Route path="/books" element={ <Books books={books} /> }/>
         <Route path="/login" element={<Login setUser={setUser} />} />

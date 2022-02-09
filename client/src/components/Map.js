@@ -1,8 +1,6 @@
 
 import React from "react";
-import { faBus } from "@fortawesome/free-solid-svg-icons";
-import bookish from "./bookish.png"
-import { Marker } from "@react-google-maps/api";
+
 
 export default function Map() {
   const google = window.google 
