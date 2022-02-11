@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-export default function Search({books, book, cartBooks, setCartBooks}) {
+export default function Search({books, book, addToCart}) {
 
     const [filter, setFilter] = useState("");
     
@@ -14,15 +14,7 @@ export default function Search({books, book, cartBooks, setCartBooks}) {
             )
     });
 
-    const addToCart = (book) => {
-      const exist = cartBooks.find(item => item.id === book.id);
-      if (exist){
-        setCartBooks(cartBooks.map((item => item.id === book.id ?{...exist, quantity: exist.quantity +1}: item ))
-        );
-      } else {
-        setCartBooks([...cartBooks, {...book, quantity: 1}]);
-      }
-    };
+ 
 
   return( <div>
       <div className='search-container' >
@@ -47,7 +39,7 @@ export default function Search({books, book, cartBooks, setCartBooks}) {
                           <h4 className='price'> $ {book.price}.00</h4>
                           <h4 style={{color: "#8C2F39"}}> {book.stock} in stock </h4>
                       </div>
-                        <button className='add-to-cart-button' onClick={addToCart}>Add to Cart</button>
+                        <button className='add-to-cart-button' onClick={()=> addToCart(book)}>Add to Cart</button>
                   </div>
         
                 </div>

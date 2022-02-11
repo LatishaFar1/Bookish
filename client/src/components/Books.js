@@ -2,14 +2,14 @@ import React from 'react';
 import Map from './Map';
 import Search from './Search';
 
-export default function Books({books, cartBooks, setCartBooks}) {
+export default function Books({books, addToCart}) {
 
 
 
   return <div>
   
 
-    <Search books={books} setCartBooks={setCartBooks} cartBooks={cartBooks} />
+    <Search books={books} addToCart={addToCart} />
     {/* <Map /> */}
  
    </div>     

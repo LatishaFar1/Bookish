@@ -23,6 +23,7 @@ function App() {
     })
   }, [])
 
+  
 
   // useEffect(() => {
   //   fetch("api/me")
@@ -34,6 +35,18 @@ function App() {
   //   })
   // }, []);
 
+
+  const addToCart = (book) => {
+    const exist = cartBooks.find(item => item.id === book.id);
+    if (exist){
+      setCartBooks(cartBooks.map((item => item.id === book.id ?{...exist, quantity: exist.quantity +1}: item ))
+      );
+    } else {
+      setCartBooks([...cartBooks, {...book, quantity: 1}]);
+    }
+  };
+
+  // const removeFromCart = 
    
   return (
    <div>
@@ -42,10 +55,10 @@ function App() {
       <NavBar />
      
       <Routes>
-        <Route path="/books" element={ <Books books={books} setCartBooks={setCartBooks} cartBooks={cartBooks}  /> }/>
+        <Route path="/books" element={ <Books books={books} addToCart={addToCart}  /> }/>
         <Route path="/login" element={<Login setUser={setUser} />} />
         <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart books={books} setCartBooks={setCartBooks} cartBooks={cartBooks} />} />
+        <Route path="/cart" element={<Cart books={books} setCartBooks={setCartBooks} addToCart={addToCart} cartBooks={cartBooks} />} />
       </Routes>
     </Router>
    </div>
