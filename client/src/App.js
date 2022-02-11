@@ -46,7 +46,15 @@ function App() {
     }
   };
 
-  // const removeFromCart = 
+  const removeFromCart = (book) => {
+    const exist = cartBooks.find(item => item.id === book.id);
+    if (exist.quantity === 1){
+      setCartBooks(cartBooks.filter((item) => item.id !== book.id ))
+    } else {
+      setCartBooks(cartBooks.map((item => item.id === book.id ?{...exist, quantity: exist.quantity - 1}: item ))
+      );
+    }
+  };
    
   return (
    <div>
@@ -58,7 +66,7 @@ function App() {
         <Route path="/books" element={ <Books books={books} addToCart={addToCart}  /> }/>
         <Route path="/login" element={<Login setUser={setUser} />} />
         <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart books={books} setCartBooks={setCartBooks} addToCart={addToCart} cartBooks={cartBooks} />} />
+        <Route path="/cart" element={<Cart books={books} setCartBooks={setCartBooks} addToCart={addToCart} removeFromCart={removeFromCart} cartBooks={cartBooks} />} />
       </Routes>
     </Router>
    </div>

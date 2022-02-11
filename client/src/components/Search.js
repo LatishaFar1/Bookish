@@ -25,7 +25,7 @@ export default function Search({books, book, addToCart}) {
         </div>
       </div>
 
-      {booksSe.map((book, key) =>{
+      {booksSe.map((book) =>{
           return(
             <div className='books-container' key={book.id}>
             <div className='books-row'>

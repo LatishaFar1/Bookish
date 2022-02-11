@@ -8,12 +8,16 @@ export default function Cart({books, setCartBooks, cartBooks, addToCart, removeF
 
   return (
     <div>
-        <div>Cart</div>
+        <div className='home-title'>Cart</div>
         <div>
             {cartBooks.length === 0 && <div> your cart is empty </div>}
             {cartBooks.map((item) => (
                 <div key={item.id}> 
-                    <div> {item.title} </div>
+                    <div> {item.title} <br/>
+                       by: {item.author}
+                         <img className='book-img' src={item.image} alt="book img" />
+                    
+                    </div>
                     <div>
                         {item.quantity} x ${item.price.toFixed(2)}
                     </div>
