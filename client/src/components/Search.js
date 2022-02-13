@@ -1,31 +1,33 @@
 import React, {useState} from 'react';
 
-export default function Search({books, book, addToCart}) {
+export default function Search({books, book, addToCart, searchQuery, setSearchQuery, filteredBooks}) {
 
     const [filter, setFilter] = useState("");
-    
-    function bookSearch(event){
-        setFilter(event.target.value);
-    }
+  
 
-    let booksSe = books.filter(book => {
-        return  Object.keys(book).some(key =>
-            book[key].toString().toLowerCase().includes(filter.toString().toLowerCase())
-            )
-    });
+    // function bookSearch(event){
+    //     setFilter(event.target.value);
+    // }
 
+    // let booksSe = books.filter(book => {
+    //     return  Object.keys(book).some(key =>
+    //         book[key].toString().toLowerCase().includes(filter.toString().toLowerCase())
+    //         )
+    // });
+
+   
  
 
   return( <div>
       <div className='search-container' >
-        <div>
-            <input type="text" className="search-text" placeholder="search for a book title" value={filter}
-            onChange={bookSearch}
+        <form action="/books" method="get">
+            <input type="text" className="search-text" placeholder="search for a book title"  name="s" value={searchQuery}
+            onInput={e => setSearchQuery(e.target.value)}
             />
-        </div>
+        </form>
       </div>
 
-      {booksSe.map((book) =>{
+      {filteredBooks.map((book) =>{
           return(
             <div className='books-container' key={book.id}>
             <div className='books-row'>

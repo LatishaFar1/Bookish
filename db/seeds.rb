@@ -8,16 +8,38 @@
 
     book1 = Book.create!(title: "Edgar Allan Poe Collected Works",
         author: "Edgar Allan Poe",
-        stock: 2,
-        price: 10.00,
+        price: 5.00,
         image: "https://images-na.ssl-images-amazon.com/images/I/71lUZ4yLB8S.jpg"
     )
 
     book2 = Book.create!(title: "His Dark Materials",
         author: "Philip Pullman",
-        stock: 1,
-        price: 20.00,
+        price: 4.00,
         image: "https://images-na.ssl-images-amazon.com/images/I/91zAe4EXmjL.jpg"
+    )
+
+    book3 = Book.create!(title: "Kindred",
+        author: "Octavia Butler",
+        price: 5.00,
+        image: "https://images-na.ssl-images-amazon.com/images/I/81KU7ZGvnZL.jpg"
+    )
+
+    book4 = Book.create!(title: "War and Peace",
+        author: "Leo Tolstoy",
+        price: 10.00,
+        image: "https://images-na.ssl-images-amazon.com/images/I/51s4UBf-y8L._SX327_BO1,204,203,200_.jpg"
+    )
+
+    book5 = Book.create!(title: "Maus",
+        author: "Art Spiegelman",
+        price: 9.00,
+        image: "https://upload.wikimedia.org/wikipedia/en/7/7d/Maus_%28volume_1%29_cover.jpg"
+    )
+
+    book6 = Book.create!(title: "The Old Guard: Book One",
+        author: "Rucka, Fernandez, Miwa, Wynne",
+        price: 3.00,
+        image: "https://images-na.ssl-images-amazon.com/images/I/81BhWtD1UwL.jpg"
     )
 
     
