@@ -26,15 +26,15 @@ function App() {
 
   
 
-  // useEffect(() => {
-  //   fetch("api/me")
-  //   .then((response) => {
-  //     if (response.ok ){
-  //       response.json()
-  //       .then((user) => setUser(user));
-  //     }
-  //   })
-  // }, []);
+  useEffect(() => {
+    fetch("api/me")
+    .then((response) => {
+      if (response.ok ){
+        response.json()
+        .then((user) => setUser(user));
+      }
+    })
+  }, []);
 
 
   const addToCart = (book) => {
@@ -67,7 +67,7 @@ function App() {
         <Route path="/books" element={ <Books books={books} addToCart={addToCart}  /> }/>
         <Route path="/login" element={<Login setUser={setUser} />} />
         <Route path="signup" element={<Signup setUser={setUser} />}/>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home user={user} />} />
         <Route path="/cart" element={<Cart books={books} setCartBooks={setCartBooks} addToCart={addToCart} removeFromCart={removeFromCart} cartBooks={cartBooks} />} />
       </Routes>
     </Router>
