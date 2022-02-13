@@ -16,7 +16,7 @@ export default function Home({user}) {
 
      <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" 
      alt="pic of books"
-     style={{height: "50%", width: "100%", marginLeft: "auto"}}/>
+     style={{height: "40%", width: "100%", marginLeft: "auto"}}/>
 
     <br/>
     </h1>

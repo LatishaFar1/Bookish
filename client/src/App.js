@@ -61,11 +61,11 @@ function App() {
    <div>
     <Router>
 
-      <NavBar />
+      <NavBar setUser={setUser} user={user} />
      
       <Routes>
         <Route path="/books" element={ <Books books={books} addToCart={addToCart}  /> }/>
-        <Route path="/login" element={<Login setUser={setUser} />} />
+        <Route path="/login" element={<Login setUser={setUser} user={user}/>} />
         <Route path="signup" element={<Signup setUser={setUser} />}/>
         <Route path="/" element={<Home user={user} />} />
         <Route path="/cart" element={<Cart books={books} setCartBooks={setCartBooks} addToCart={addToCart} removeFromCart={removeFromCart} cartBooks={cartBooks} />} />
