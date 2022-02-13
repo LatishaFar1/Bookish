@@ -11,8 +11,9 @@ export default function NavBar() {
             <li className="nav-link">
                 <Link to="/">home</Link>
                 <Link to="/books">books</Link>
-                <Link to="/Login">login</Link>
                 <Link to="/Cart">cart</Link>
+                <Link to="/Login">login</Link>
+                <Link to="/Signup">signup</Link>
             </li>
         </ul>
       </div>

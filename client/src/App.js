@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './components/Home';
 import NavBar from "./components/NavBar";
 import Cart from './components/Cart';
+import Signup from './components/Signup';
 
 
 function App() {
@@ -65,6 +66,7 @@ function App() {
       <Routes>
         <Route path="/books" element={ <Books books={books} addToCart={addToCart}  /> }/>
         <Route path="/login" element={<Login setUser={setUser} />} />
+        <Route path="signup" element={<Signup setUser={setUser} />}/>
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart books={books} setCartBooks={setCartBooks} addToCart={addToCart} removeFromCart={removeFromCart} cartBooks={cartBooks} />} />
       </Routes>
