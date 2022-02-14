@@ -3,6 +3,7 @@ import React from 'react'
 
 export default function Cart({books, setCartBooks, cartBooks, addToCart, removeFromCart}) {
 
+    const booksTotal = cartBooks.reduce((a, c ) => a + c.price * c.quantity, 0);
     
 
 
@@ -27,6 +28,12 @@ export default function Cart({books, setCartBooks, cartBooks, addToCart, removeF
                     </div>
                  </div>
             ))}
+            {booksTotal.length !== 0 && (
+              <div className="cart-total">
+                  <h1>Total:</h1>
+                  ${booksTotal.toFixed(2)}
+                </div>
+            )}
         </div>
     </div>
   )

@@ -57,6 +57,7 @@ const filteredBooks = filterBooks(books, searchQuery);
   // }, []);
 
 
+
   const addToCart = (book) => {
     const exist = cartBooks.find(item => item.id === book.id);
     if (exist){

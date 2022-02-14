@@ -1,21 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 export default function Search({books, book, addToCart, searchQuery, setSearchQuery, filteredBooks}) {
 
-    const [filter, setFilter] = useState("");
-  
-
-    // function bookSearch(event){
-    //     setFilter(event.target.value);
-    // }
-
-    // let booksSe = books.filter(book => {
-    //     return  Object.keys(book).some(key =>
-    //         book[key].toString().toLowerCase().includes(filter.toString().toLowerCase())
-    //         )
-    // });
-
-   
  
 
   return( <div>
