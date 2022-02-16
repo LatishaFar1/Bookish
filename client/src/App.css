@@ -293,3 +293,17 @@ map */
   font-size: 20px;
   font-family: 'Supermercado One';
 }
+
+.cart-item-info{
+  font-size: 20px;
+}
+
+.button{
+  font-family: 'Supermercado One', cursive;
+	font-size: 14px;
+	margin-top: 20px;
+	padding: 15px;
+	border-radius: 15px;
+	align-items: center;
+	color: #461220;
+}
