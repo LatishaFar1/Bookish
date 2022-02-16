@@ -7,7 +7,7 @@ export default function NavBar({user, setUser}) {
 
 
   function handleLogout(){
-    fetch("/api/logout", {
+    fetch("api/logout", {
       method: "DELETE",
     })
     .then((response) => {

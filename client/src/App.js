@@ -1,6 +1,5 @@
 
 import './App.css';
-import Books from './components/Books';
 import Login from './components/Login';
 import { useEffect, useState } from 'react';
 import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -46,15 +45,15 @@ const filteredBooks = filterBooks(books, searchQuery);
 
   
 
-  // useEffect(() => {
-  //   fetch("api/me")
-  //   .then((response) => {
-  //     if (response.ok ){
-  //       response.json()
-  //       .then((user) => setUser(user));
-  //     }
-  //   })
-  // }, []);
+  useEffect(() => {
+    fetch("api/me")
+    .then((response) => {
+      if (response.ok ){
+        response.json()
+        .then((user) => setUser(user));
+      }
+    })
+  }, []);
 
 
 
