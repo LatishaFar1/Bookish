@@ -11,7 +11,7 @@ export default function Cart({books, setCartBooks, cartBooks, addToCart, removeF
     <div>
         <div className='home-title'>Cart</div>
         <div>
-            {cartBooks.length === 0 && <div> your cart is empty </div>}
+            {cartBooks.length === 0 && <div className='cart-subtitle'> your cart is empty </div>}
             {cartBooks.map((item) => (
                 <div key={item.id}> 
                     <div> {item.title} <br/>

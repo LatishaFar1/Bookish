@@ -278,7 +278,18 @@ map */
 
 }
 
-/* Home */
 .user-title{
   font-size: 22px;
+}
+
+/* Cart */
+.cart-subtitle{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Supermercado One';
+}
+
+.cart-total{
+  font-size: 20px;
+  font-family: 'Supermercado One';
 }
