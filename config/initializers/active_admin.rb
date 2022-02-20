@@ -214,11 +214,11 @@ ActiveAdmin.setup do |config|
   #   config.register_stylesheet 'my_print_stylesheet.css', media: :print
   #
 
-  config.clear_stylesheets!
-config.register_stylesheet 'admin/active_admin'
+#   config.clear_stylesheets!
+# config.register_stylesheet 'admin/active_admin'
 
-config.clear_javascripts!
-config.register_javascript 'admin/active_admin'
+# config.clear_javascripts!
+# config.register_javascript 'admin/active_admin'
 
   # To load a javascript file:
   #   config.register_javascript 'my_javascript.js'
