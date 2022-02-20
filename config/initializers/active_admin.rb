@@ -213,6 +213,13 @@ ActiveAdmin.setup do |config|
   # You can provide an options hash for more control, which is passed along to stylesheet_link_tag():
   #   config.register_stylesheet 'my_print_stylesheet.css', media: :print
   #
+
+  config.clear_stylesheets!
+config.register_stylesheet 'admin/active_admin'
+
+config.clear_javascripts!
+config.register_javascript 'admin/active_admin'
+
   # To load a javascript file:
   #   config.register_javascript 'my_javascript.js'
 
