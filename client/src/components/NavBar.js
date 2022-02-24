@@ -31,7 +31,7 @@ export default function NavBar({user, setUser}) {
       ) : (
         <>
         <Link to="/Login">login</Link>
-        {/* <Link to="/Admin">admin login</Link> */}
+        <Link to="/Admin/login">admin login</Link>
        <Link to="/Signup">signup</Link>
        </>
       )

@@ -40,7 +40,7 @@ module BookishApp
     config.middleware.use ActionDispatch::Session::CookieStore
     config.middleware.use ActionDispatch::Flash
     config.action_dispatch.cookies_same_site_protection = :strict
-    
+    config.middleware.use Rack::MethodOverride
     config.api_only = true
   end
 end

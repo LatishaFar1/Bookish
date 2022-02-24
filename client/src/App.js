@@ -91,6 +91,7 @@ const filteredBooks = filterBooks(books, searchQuery);
         <Route path="/cart" element={<Cart books={books} setCartBooks={setCartBooks} addToCart={addToCart} removeFromCart={removeFromCart} cartBooks={cartBooks} />} />
         <Route path="/books" element={ <Search setSearchQuery={setSearchQuery} filteredBooks={filteredBooks} books={books} searchQuery={searchQuery} addToCart={addToCart}  /> }
         />
+
       </Routes>
     </Router>
 

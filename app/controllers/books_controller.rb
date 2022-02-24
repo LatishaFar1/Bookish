@@ -10,10 +10,17 @@ class BooksController < ApplicationController
         render json: book
     end 
 
+
     def create
         book = Book.create(book_params)
         render json: book 
     end 
+
+    # def destroy
+    #     book = Book.find_by(:id params[:id])
+    #     book.destroy
+    #     render json: {message: "Book deleted"}
+    # end 
 
     private 
 
