@@ -15,6 +15,7 @@ function App() {
   const [books, setBooks] = useState([]);
   const [cartBooks, setCartBooks] = useState([]);
 
+
   const {search} = window.location; 
   const query = new URLSearchParams(search).get('s');
   const [searchQuery, setSearchQuery] = useState(query || '');
@@ -76,6 +77,9 @@ const filteredBooks = filterBooks(books, searchQuery);
       );
     }
   };
+
+  //reviews 
+
    
   return (
    <div>
