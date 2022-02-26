@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   scope :api do 
-  resources :books, only: [:index, :show, :create, :update, :destroy]
+  resources :books do 
+    resources :reviews 
+  end 
   resources :users
   
 
