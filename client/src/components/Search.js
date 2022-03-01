@@ -2,13 +2,13 @@ import React, {useState} from 'react';
 
 export default function Search({ addToCart, searchQuery, setSearchQuery, filteredBooks}) {
 
-  const [formInfo, setFormInfo] = useState({comment: ""});
+  const [formInfo, setFormInfo] = useState( {comment: ""});
 
 
 
   function handleSubmit(e){
     e.preventDefault()
-    fetch("/api/books/book_id/reviews", {
+    fetch("/api/books/:book_id/reviews", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
