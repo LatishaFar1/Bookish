@@ -1,34 +1,27 @@
 import React, {useState} from 'react';
-
+import Reviews from './Reviews';
 export default function Search({ addToCart, searchQuery, setSearchQuery, filteredBooks}) {
 
-  const [formInfo, setFormInfo] = useState( {comment: ""});
 
 
 
-  function handleSubmit(e){
+
+  function handleSubmit(e, id, comment, setComment){
     e.preventDefault()
-    fetch("/api/books/:book_id/reviews", {
+    fetch(`/api/books/${id}/reviews`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(formInfo),
+        body: JSON.stringify({book_id: id, comment: comment}),
     })
     .then((response) => response.json())
     .then(() => {
-        setFormInfo({});
+        setComment("");
     });
 }
 
-const handleChange = (event) => {
-  setFormInfo((prev) => {
-      return{
-          ...prev,
-          [event.target.name]: event.target.value
-      }
-  })
-}
+
 
   return( <div>
       <div className='search-container' >
@@ -55,11 +48,9 @@ const handleChange = (event) => {
                       </div>
                         <button className='add-to-cart-button' onClick={()=> addToCart(book)}>Add to Cart</button>
                   </div>
-                  <form style={{color: "#8C2F39"}} onSubmit={handleSubmit}>
-                      <h4>Leave a review</h4>
-                      <input type="text" name="comment" onChange={handleChange} />
-                      <button className='add-to-cart-button'>submit review</button>
-                     </form>
+                    <Reviews  handleSubmit={handleSubmit} book={book}/>
+
+              
                 </div>
         
               </div>

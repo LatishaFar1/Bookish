@@ -6,20 +6,20 @@ class ReviewsController < ApplicationController
         render json: reviews 
     end 
 
-    def new 
-        review = Review.new
-    end 
 
     def create
-        @review.new(review_params)
-        @review.book_id = @book.id 
-        @review.user_id = current_user.id
+     @review = current_user.reviews.build(review_params)
+        if @review.save
+            render json: @review, status: :created
+        else
+            render json: {error: @review.errors.full_messages}
+        end 
     end 
 
     private
 
     def review_params
-        params.require(:review).permit(:comment, :book_id, :review)
+        params.permit(:comment, :book_id)
     end 
 
     def find_book
