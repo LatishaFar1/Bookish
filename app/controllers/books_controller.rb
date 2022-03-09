@@ -2,12 +2,13 @@ class BooksController < ApplicationController
 
     def index 
         books = Book.all 
-        render json: books 
+        render json: books, include: [:reviews]
     end 
 
     def show 
         book = Book.find(params[:id])
-        render json: book
+   
+        render json: book, include: [:reviews]
     end 
 
 
@@ -27,4 +28,7 @@ class BooksController < ApplicationController
     def book_params
         params.permit(:title, :author, :stock, :image)
     end 
+
+    
+
 end

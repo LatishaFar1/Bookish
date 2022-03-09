@@ -23,6 +23,7 @@ class ReviewsController < ApplicationController
     end 
 
     def find_book
-        book = Book.find_by(id: params[:book_id])
+        @book = Book.find_by(id: params[:id])
     end
+    
 end

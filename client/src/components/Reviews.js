@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
-
+import React, {useState, useEffect} from 'react'
+import RenderedReviews from './RenderedReviews';
 export default function Reviews({book, handleSubmit}) {
 
   const [comment, setComment] = useState("");
+
 
   const handleChange = (event) => {
     // setFormInfo((prev) => {
@@ -13,6 +14,9 @@ export default function Reviews({book, handleSubmit}) {
     // })
     setComment(event.target.value)
   }
+
+  console.log(book)
+
 
  
 
@@ -27,6 +31,7 @@ export default function Reviews({book, handleSubmit}) {
                       <button className='add-to-cart-button'>submit review</button>
                      </form>
 
+<RenderedReviews reviews={book.reviews}/>
 
 
 
