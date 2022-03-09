@@ -254,6 +254,16 @@ map */
   color: #FCB9B2;
 }
 
+/* Reviews */
+.reviews{
+  overflow-y: scroll;
+  background-color: #461220;
+  width: 300px;
+  height: 100px;
+  
+  
+}
+
 /* Home  */
 .home-title{
   font-family: 'Supermercado One', cursive;

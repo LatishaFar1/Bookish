@@ -98,7 +98,7 @@ const filteredBooks = filterBooks(books, searchQuery);
         />
       </Routes>
     </Router>
-    <Map />
+    {/* <Map /> */}
    
           
    </div>

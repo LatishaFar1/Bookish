@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Reviews from './Reviews';
-import RenderedReviews from './RenderedReviews';
+
 
 export default function Search({ addToCart, searchQuery, setSearchQuery, filteredBooks}) {
 
 
-  const [reviews, setReviews] = useState([]);
 
 
   function handleSubmit(e, id, comment, setComment){
@@ -25,15 +24,6 @@ export default function Search({ addToCart, searchQuery, setSearchQuery, filtere
 
 
  
-
-// useEffect(() => {
-//   fetch("/api/books/:book_id/reviews")
-//   .then(response => response.json())
-//   .then(reviewsData => {
-//     setReviews([...reviewsData])
-//     // console.log(reviewsData)
-//   })
-// }, [])
 
 
   return( <div>
