@@ -2,14 +2,13 @@ import React, {useState} from 'react'
 import RenderedReviews from './RenderedReviews';
 export default function Reviews({book, handleSubmit}) {
 
-  const [comment, setComment] = useState("");
+  const [comment, setComment] = useState([]);
 
 
   const handleChange = (event) => {
     setComment(event.target.value)
   }
 
-  console.log(book)
 
 
  

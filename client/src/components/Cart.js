@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export default function Cart({books, setCartBooks, cartBooks, addToCart, removeFromCart}) {
+export default function Cart({cartBooks, addToCart, removeFromCart}) {
 
     const booksTotal = cartBooks.reduce((a, c ) => a + c.price * c.quantity, 0);
     

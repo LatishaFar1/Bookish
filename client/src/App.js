@@ -17,6 +17,8 @@ function App() {
   const [cartBooks, setCartBooks] = useState([]);
 
 
+  //search books 
+
   const {search} = window.location; 
   const query = new URLSearchParams(search).get('s');
   const [searchQuery, setSearchQuery] = useState(query || '');
@@ -37,6 +39,9 @@ function App() {
 
 const filteredBooks = filterBooks(books, searchQuery);
 
+
+// fetch books 
+
   useEffect(() => {
     fetch("api/books")
     .then(response => response.json())
@@ -46,6 +51,7 @@ const filteredBooks = filterBooks(books, searchQuery);
   }, [])
 
   
+  //login
 
   useEffect(() => {
     fetch("api/me")
@@ -58,6 +64,7 @@ const filteredBooks = filterBooks(books, searchQuery);
   }, []);
 
 
+  //cart 
 
   const addToCart = (book) => {
     const exist = cartBooks.find(item => item.id === book.id);
@@ -79,7 +86,6 @@ const filteredBooks = filterBooks(books, searchQuery);
     }
   };
 
-  //reviews 
 
    
   return (
@@ -89,7 +95,6 @@ const filteredBooks = filterBooks(books, searchQuery);
       <NavBar setUser={setUser} user={user} />
      
       <Routes>
-        {/* <Route path="/books" element={ <Books books={books} setSearchQuery={setSearchQuery} searchQuery={searchQuery} addToCart={addToCart}  /> }/> */}
         <Route path="/login" element={<Login setUser={setUser} user={user}/>} />
         <Route path="signup" element={<Signup setUser={setUser} />}/>
         <Route path="/" element={<Home user={user} />} />
